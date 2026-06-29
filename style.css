@@ -1,0 +1,243 @@
+:root{
+    --border-radius: 20px;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px !important;
+    border: 0 !important;
+    padding: 0 !important;
+    white-space: nowrap !important;
+    clip-path: inset(100%) !important;
+    clip: rect(0 0 0 0) !important;
+    overflow: hidden !important;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    padding-block: 0px;
+    padding-inline: 50px;
+}
+
+h1{
+    font-size: 72px;
+}
+
+.slides__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__list{
+    display: flex;
+    column-gap: 20px;
+}
+
+.header__button{
+    background-color: yellow;
+    border: none;
+    border-radius: var(--border-radius);
+
+    padding-inline: 50px;
+    font-size: 32px;
+    padding-block: 25px;
+
+    transition: background 1s, border 0.3s, transform 1s;
+}
+
+.header__button:hover{
+    background-color: orange;
+    border: 5px solid purple;
+
+    transform: rotate(360deg);
+
+}
+
+.slides__content{
+    display: none;
+}
+
+.slides__content.is-active{
+    display: contents;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slides__menu{
+    padding: 15px;
+}
+
+.menu__list{
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    align-items: center;    
+}
+
+.slides__button{
+    background-color: aquamarine;
+    padding-block: 20px;
+    padding-inline: 40px;
+    font-size: 48px;
+
+    border: none;
+    border-radius: var(--border-radius);
+
+    transition: background 1s, border 0.3s, transform 1s;
+}
+
+.slides__button:hover{
+    background-color: aqua;
+    border: 5px solid tomato;
+    transform: scale(1.3);
+}
+
+.forms__list{
+    display: flex;
+    column-gap: 40px;
+}
+
+.forms__button{
+    background-color: aquamarine;
+    padding-block: 20px;
+    padding-inline: 40px;
+    font-size: 24px;
+
+    border: none;
+    border-radius: var(--border-radius);
+
+    transition: background 1s, border 0.3s, transform 1s;
+}
+
+.forms__button:hover{
+    background-color: aqua;
+    border: 5px solid tomato;
+    transform: scale(1.3);
+}
+
+.form__image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 42px;
+}
+
+.form__img{
+    height: 380px;
+    width: auto;
+}
+
+.cards{
+    display: flex;
+    column-gap: 50px;
+
+    perspective: 1000px;
+}
+
+.advantage-card{
+    background-color: aquamarine;
+    border-radius: var(--border-radius);
+    height: 800px;
+    width: 300px;
+    padding-inline: 30px;
+
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+
+    transform-style: preserve-3d;
+    transition: all 2s ease;
+}
+
+.advantage-card:hover{
+    background-color: aqua;
+    border-radius: var(--border-radius);
+    height: 800px;
+    width: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: rotateY(360deg);
+}
+
+.advantage-card .rotate{
+    transform: rotateY(-360deg);
+}
+
+.action{
+    display: flex;
+    column-gap: 20px;
+    font-size: 36px;
+}
+
+.mechanic{
+    max-width: 50%;
+    background-color: aquamarine;
+    border-radius: var(--border-radius);
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+
+    padding-block: 30px;
+    padding-inline: 20px;
+
+    text-align: center;
+}
+
+.info{
+    background-color: aqua;
+    padding-block: 20px;
+    padding-inline: 10px;
+
+    border-radius: var(--border-radius);
+
+    font-size: 56px;
+}
+
+.features__list{
+    background-color: aquamarine;
+    border-radius: var(--border-radius);
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    padding-block: 30px;
+    padding-inline: 40px;
+}
+
+.featerus__item-main{
+    font-weight: bold;
+    text-align: center;
+    list-style-type: none;
+}
+
+.advantages__list{
+    background-color: aquamarine;
+    border-radius: var(--border-radius);
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    padding-block: 30px;
+    padding-inline: 40px;
+}
+
+.advantages__item-main{
+    font-weight: bold;
+    text-align: center;
+    list-style-type: none;
+}
